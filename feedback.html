@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Feedback | Viraj Dayal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">VIRAJ DAYAL</a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="work.html" class="active">WORK</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <a href="contact.html" class="nav-cta">LET'S TALK &rarr;</a>
+        </div>
+    </nav>
+
+    <!-- PORTFOLIO CONTENT -->
+    <main class="portfolio-page">
+
+        <!-- TOP BACK BUTTON -->
+        <div class="animate-up" style="margin-bottom: 2rem; padding: 0 5%;">
+            <a href="video.html" class="back-link">&larr; BACK TO VIDEOS</a>
+        </div>
+
+        <!-- CENTERED PREMIUM HEADER -->
+        <header class="feedback-hero animate-up">
+            <span class="eyebrow-text">06 — SOCIAL PROOF</span>
+            <h1 class="page-title">CLIENT FEEDBACK</h1>
+        </header>
+
+        <!-- CLEAN CARD GRID -->
+        <section class="feedback-grid">
+
+            <!-- MOTOROLA INDIA -->
+            <div id="motorola" class="feedback-card animate-up">
+                <div class="feedback-image-container">
+                    <a href="assets/images/motorola-feedback.jpeg" class="lightbox-trigger" title="Click to view full image">
+                        <img src="assets/images/motorola-feedback.jpeg" alt="Motorola India Comment">
+                    </a>
+                </div>
+                <h3>Motorola India</h3>
+                <p>Official brand recognition for the Cinematic Exploration environmental study.</p>
+            </div>
+
+            <!-- CAR CLIENT -->
+            <div id="car-client" class="feedback-card animate-up">
+                <div class="feedback-image-container">
+                    <a href="assets/images/carclient.png" class="lightbox-trigger" title="Click to view full image">
+                        <img src="assets/images/carclient.png" alt="Client Feedback Chat">
+                    </a>
+                </div>
+                <h3>Automotive Client</h3>
+                <p>Delivery approval and praise for beat-synced pacing on commissioned vehicle edits.</p>
+            </div>
+
+            <!-- ROHIT EDIT (CREATOR) -->
+            <div id="creator" class="feedback-card animate-up">
+                <div class="feedback-image-container">
+                    <a href="assets/images/creator-feedback.jpeg" class="lightbox-trigger" title="Click to view full image">
+                        <img src="assets/images/creator-feedback.jpeg" alt="Creator Feedback Chat">
+                    </a>
+                </div>
+                <h3>Creator Request</h3>
+                <p>Final delivery confirmation and positive reception for the Rohit Sharma tribute edit.</p>
+            </div>
+
+        </section>
+
+        <!-- BOTTOM BACK BUTTON -->
+        <div class="animate-scroll" style="text-align: center; margin-top: 2rem; margin-bottom: 5rem;">
+            <a href="video.html" class="cs-feedback-btn">&larr; BACK TO VIDEO GALLERY</a>
+        </div>
+
+    </main>
+
+   <!-- PREMIUM GLOBAL FOOTER -->
+    <footer class="footer-premium">
+        <div class="footer-premium-top">
+            <!-- Brand & Trademark -->
+            <div class="footer-brand animate-scroll">
+                <h2>VIRAJ <span class="accent">DAYAL</span></h2>
+                <p>THE GROW VIA &copy; 2026</p>
+            </div>
+            
+            <!-- Navigation & Socials -->
+            <div class="footer-links-group animate-scroll" style="animation-delay: 0.1s;">
+                <div class="footer-col">
+                    <span class="footer-col-title">Digital Brands</span>
+                    <a href="https://instagram.com/the.growvia" target="_blank">Instagram</a>
+                    <a href="https://youtube.com/@TheGrowVia" target="_blank">YouTube</a>
+                    <a href="https://pinterest.com/thegrowvia" target="_blank">Pinterest</a>
+                    <a href="#" target="_blank">Gumroad Store</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Directory</span>
+                    <a href="work.html">Selected Work</a>
+                    <a href="skills.html">Capabilities</a>
+                    <a href="about.html">About & Mindset</a>
+                    <a href="contact.html">Initiate Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location & Back to Top -->
+        <div class="footer-premium-bottom animate-scroll">
+            <span>OPERATING OUT OF PUNE, IN.</span>
+            <span>ALL RIGHTS RESERVED.</span>
+            <a href="#" class="footer-back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                BACK TO TOP &uarr;
+            </a>
+        </div>
+    </footer>
+
+    <!-- THE LIGHTBOX OVERLAY -->
+    <div id="custom-lightbox" class="lightbox-modal">
+        <div class="lightbox-back" onclick="closeLightbox()">&larr; BACK TO FEEDBACK</div>
+        <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+        <img class="lightbox-content" id="lightbox-img" src="">
+    </div>
+
+    <!-- GSAP & Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- LIGHTBOX ENGINE -->
+    <script>
+        const lightbox = document.getElementById('custom-lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const triggers = document.querySelectorAll('.lightbox-trigger');
+
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault(); // Stops the raw image from opening in a new tab
+                lightboxImg.src = trigger.getAttribute('href'); // Grabs the image path
+                lightbox.style.display = 'flex'; // Shows the overlay
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+        }
+
+        // Closes the lightbox if you click anywhere in the black background
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                closeLightbox();
+            }
+        });
+    </script>
+    
+</body>
+</html>

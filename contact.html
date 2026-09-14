@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Viraj Dayal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">VIRAJ DAYAL</a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="work.html">WORK</a>
+                <a href="skills.html">SKILLS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html" class="active">CONTACT</a>
+            </div>
+            <a href="contact.html" class="nav-cta">LET'S TALK &rarr;</a>
+        </div>
+    </nav>
+
+   <!-- PORTFOLIO CONTENT -->
+    <main class="portfolio-page">
+        
+        <!-- TOP HEADER BANNER (Like the top-right reference) -->
+        <div class="contact-hero-banner animate-up">
+            <p>05 — Inquiries</p>
+            <h1>Contact Us</h1>
+        </div>
+
+        <!-- MAIN LAYOUT (Left empty for custom text, Right for the mini-form) -->
+        <section class="contact-grid animate-scroll" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            
+            <!-- LEFT SIDE: Your Custom Info Area -->
+            <div class="contact-info-block">
+                <h2>Let's build something.</h2>
+                <p>I am currently open for freelance projects, video editing collaborations, and data roles. Fill out the form or reach out directly via email or social media.</p>
+
+                <div class="contact-directory">
+                    <div class="dir-item">
+                        <h4>Direct Email</h4>
+                        <a href="mailto:workwithviraj01@gmail.com">workwithviraj01@gmail.com</a>
+                    </div>
+                    <div class="dir-item">
+                        <h4>Socials</h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="https://instagram.com/the.growvia" target="_blank">Instagram ↗</a>
+                         <a href="http://thegrowvia.gumroad.com" target="_blank">Gumroad ↗</a>
+                            <a href="https://youtube.com/@TheGrowVia" target="_blank">YouTube ↗</a>
+                            <a href="https://pinterest.com/thegrowvia" target="_blank">Pinterest ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: The Contained "Mini-Form" Card -->
+            <div class="contact-form-card">
+                <!-- Formspree Link Activated -->
+                <form action="https://formspree.io/f/xkjnlojr" method="POST" id="portfolio-form">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" class="card-input" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" class="card-input" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="card-input" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Project Category</label>
+                        <select id="subject" name="subject" class="card-input" style="cursor: pointer;" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="video">Video Editing</option>
+                            <option value="data">Data Analytics</option>
+                            <option value="copywriting">Copywriting</option>
+                            <option value="social media guide">Social Media Guide</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="card-input" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="card-submit-btn">Submit</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+        
+<!-- PREMIUM GLOBAL FOOTER -->
+    <footer class="footer-premium">
+        <div class="footer-premium-top">
+            <!-- Brand & Trademark -->
+            <div class="footer-brand animate-scroll">
+                <h2>VIRAJ <span class="accent">DAYAL</span></h2>
+                <p>THE GROW VIA &copy; 2026</p>
+            </div>
+            
+            <!-- Navigation & Socials -->
+            <div class="footer-links-group animate-scroll" style="animation-delay: 0.1s;">
+                <div class="footer-col">
+                    <span class="footer-col-title">Digital Brands</span>
+                    <a href="https://instagram.com/the.growvia" target="_blank">Instagram</a>
+                    <a href="https://youtube.com/@TheGrowVia" target="_blank">YouTube</a>
+                    <a href="https://pinterest.com/thegrowvia" target="_blank">Pinterest</a>
+                    <a href="#" target="_blank">Gumroad Store</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Directory</span>
+                    <a href="work.html">Selected Work</a>
+                    <a href="skills.html">Capabilities</a>
+                    <a href="about.html">About & Mindset</a>
+                    <a href="contact.html">Initiate Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location & Back to Top -->
+        <div class="footer-premium-bottom animate-scroll">
+            <span>OPERATING OUT OF PUNE, IN.</span>
+            <span>ALL RIGHTS RESERVED.</span>
+            <a href="#" class="footer-back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                BACK TO TOP &uarr;
+            </a>
+        </div>
+    </footer>
+    <!-- GSAP & Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
