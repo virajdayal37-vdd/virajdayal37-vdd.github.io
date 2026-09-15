@@ -2571,6 +2571,11 @@ select.card-input:focus {
    ================================================== */
 @media (max-width: 768px) {
     /* Target the core navigation tag directly */
+body {
+        padding-top: 180px !important; 
+    }
+
+   
     nav {
         display: flex !important;
         flex-direction: column !important;
