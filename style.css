@@ -2565,3 +2565,17 @@ select.card-input:focus {
         padding-top: 8rem;
     }
 }
+
+
+/* ==================================================
+   MOBILE LAYOUT OVERRIDES (FORCED)
+   ================================================== */
+@media (max-width: 768px) {
+    .navbar { height: auto !important; padding: 1rem 0 !important; }
+    .nav-container { flex-direction: column !important; gap: 1.5rem !important; padding: 1rem 5% !important; }
+    .nav-brand { margin: 0 auto !important; text-align: center !important; }
+    .nav-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 1rem !important; width: 100% !important; }
+    .nav-cta { display: none !important; }
+    .hero-buttons { display: flex !important; flex-direction: column !important; width: 100% !important; gap: 1rem !important; }
+    .hero-buttons a { width: 100% !important; text-align: center !important; }
+}
